@@ -1,3 +1,11 @@
+/* Logo styling already provided, but you can tweak it */
+.logo {
+  font-size: 1rem;   /* bigger symbol */
+  padding-right: 0.5em;
+  color: #000000;    /* cool black logo color */
+}
+
+
 /* Make body a vertical flex container */
 body {
   display: flex;
@@ -40,4 +48,43 @@ main {
 
 article, aside {
   border: 1px solid #ddd;
+}
+
+
+/* Article styling - feel free to customize */
+article {
+  background-color: #ffffff;
+  border: 1px solid #221f1f;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* You can add hover effects to header list items */
+header ul li:not(.logo):hover {
+  color: #005fa3;
+  cursor: pointer;
+}
+
+/* Style links inside article if any */
+article a {
+  color: #0077cc;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+
+article a:hover {
+  border-bottom: 1px solid #0077cc;
+}
+
+/* Customize background and font for body */
+body {
+  background: linear-gradient(120deg, #040606, #080808);
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #444;
 }
